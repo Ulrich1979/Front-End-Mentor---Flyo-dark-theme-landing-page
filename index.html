@@ -1,118 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+
+    <script src="modal.js"></script>
+
+</head>
+<body>
+
 <header>
 
-<nav class="navigation">
-  <div class="logo">
-    <img src="https://picsum.photos/250/40" alt="">
-  </div>
-  <div class="nav-list">
-    <a href="">Features</a>
-    <a href="">Team</a>
-    <a href="">Sign In</a>
-  </div>
+<nav class="navigation bc-dark">
+    <div class="logo">
+        <img src="images/logo.svg" alt="">
+    </div>
+    <div class="nav-list" id="my-nav-list">
+        <a href="#features">Features</a>
+        <a href="#team">Team</a>
+        <a href="#signin">Sign In</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 </nav>
 </header>
 
 <main>
-<section class="hero-sec">
-  <div class="col middle">
-    <img src="https://picsum.photos/400/200" alt="">
-    <h1>All your files in one secure location, <br> accessible anywere</h1>
-    <p>Flyo stores all your most important files in one secure location. Access them wherever you need, </p>
-    <button>Get Started</button>
-  </div>
+<section class="hero-sec bc-dark">
+    <div class="col width-40 center">
+        <img class="width-100" src="images/illustration-intro.png" alt="">
+        <h1>All your files in one secure location, <br> accessible anywere</h1>
+        <p>Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers. </p>
+        <button>Get Started</button>
+    </div>
 </section>
-  
-<section class="service-sec">
-  <div class="row middle">
+
+<section class="service-sec bc-darker" id="features">
+  <div class="row wrap width-60">
     <div class="service-item">
-      <img src="https://picsum.photos/100/100" alt="">
+      <img src="images/icon-access-anywhere.svg" alt="">
       <h3>Access your files, anywere</h3>
-      <p>Service text comes here. Service text comes here. </p>
+      <p>The ability to use a smartphone, tablet, or computer to access your account means your 
+  files follow you everywhere.</p>
     </div>
     <div class="service-item">
-      <img src="https://picsum.photos/100/100" alt="">
+      <img src="images/icon-security.svg" alt="">
       <h3>Security you can trust</h3>
-      <p>Service text comes here. Service text comes here. Service text comes here. Service text. </p>
+      <p>2-factor authentication and user-controlled encryption are just a couple of the security 
+  features we allow to help secure your files.</p>
     </div>
     <div class="service-item">
-      <img src="https://picsum.photos/100/100" alt="">
+      <img src="images/icon-collaboration.svg" alt="">
       <h3>Real-time collaboration</h3>
-      <p>Service text comes here. Service text comes here. Service text comes here. </p>
+      <p>Securely share files and folders with friends, family and colleagues for live collaboration. 
+  No email attachments required.</p>
     </div>
     <div class="service-item">
-      <img src="https://picsum.photos/100/100" alt="">
+      <img src="images/icon-any-file.svg" alt="">
       <h3>Store any type of files</h3>
-      <p>Service text comes here. Service text comes here. Service text comes here. Service text comes here. </p>
+      <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
+  file types to be securely stored and shared.</p>
     </div>
   </div>  
 </section> 
 
-<section class="sbs-sec">
-  <div class="row">
+<section class="sbs-sec bc-darker">
+  <div class="row wrap">
     <div class="img-col">
-      <img src="https://picsum.photos/400/200" alt="">
+      <img class="width-100" src="images/illustration-stay-productive.png" alt="">
     </div>
     <div class="text-col">
       <h2>Stay productive,<br>werever you are</h2>
-      <p>Never let location be an issue, never let location be an issue. Never let location be an issue, never let location be.</p>
-      <a href="#">See how Flyo works</a>
+      <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+  storage needs.</p>
+      <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+        attachments required.</p>
+      <a href="#" class="sbs-link">See how Flyo works</a>
+      <img src="images/icon-arrow.svg" alt="">
     </div>
   </div>
 
   
 </section>
-<section class="testimonal-sec">
-  <div class="testimonial-list row">
-    <div class="testimonial-item">
+<section class="testimonal-sec bc-darker" id="team">
+  <div class="testimonial-list row wrap">
+    <div class="testimonial-item bc-dark">
       <div class="testimonial-text">
-        <p>Service text comes here. Service text comes here. </p>
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+  become a well-oiled collaboration machine.</p>
       </div>
-      <div class="testimonial-supplement row">
+      <div class="row align-start">
         <div class="col">
-          <img src="https://picsum.photos/60/60" alt="">
+          <img src="images/profile-1.jpg" alt="" class="round width-40px">
         </div>
-        <div class="col">
-          <p class="fs-small">
-            Satish Pascal
+        <div class="col align-start">
+          <p class="fs-small testimonial-desc">
+            Satish Patel
           </p>
-          <p class="fs-small fc-grey">
-            Senior Vice President
+          <p class="fs-small fc-grey testimonial-desc">
+            Founder & CEO, Huddle
           </p>
         </div>
       </div>
     </div>
-    <div class="testimonial-item">
+    <div class="testimonial-item bc-dark">
       <div class="testimonial-text">
-        <p>Service text comes here. Service text comes here. </p>
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+  become a well-oiled collaboration machine.</p>
       </div>
-      <div class="testimonial-supplement row">
+      <div class="row align-start">
         <div class="col">
-          <img src="https://picsum.photos/60/60" alt="">
+          <img src="images/profile-2.jpg" alt="" class="round width-40px">
         </div>
-        <div class="col">
-          <p class="fs-small">
-            Satish Pascal
+        <div class="col align-start">
+          <p class="fs-small testimonial-desc">
+            Bruce McKenzie
           </p>
-          <p class="fs-small fc-grey">
-            Senior Vice President
+          <p class="fs-small fc-grey testimonial-desc">
+            Founder & CEO, Fruddle
           </p>
         </div>
       </div>
     </div>
-    <div class="testimonial-item">
+    <div class="testimonial-item bc-dark">
       <div class="testimonial-text">
-        <p>Service text comes here. Service text comes here. </p>
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+  become a well-oiled collaboration machine.</p>
       </div>
-      <div class="testimonial-supplement row">
+      <div class="row align-start">
         <div class="col">
-          <img src="https://picsum.photos/60/60" alt="">
+          <img src="images/profile-3.jpg" alt="" class="round width-40px">
         </div>
-        <div class="col">
-          <p class="fs-small">
-            Satish Pascal
+        <div class="col align-start">
+          <p class="fs-small testimonial-desc">
+            Iva Boyd
           </p>
-          <p class="fs-small fc-grey">
-            Senior Vice President
+          <p class="fs-small fc-grey testimonial-desc">
+            Founder & CEO, Puddle
           </p>
         </div>
       </div>
@@ -121,55 +155,74 @@
   </div>
 </section>
 
-<section class="contact-sec">
-  <div class="row middle">
-    <p>Please contact me</p>
-    <form>
-      <label class="fs-small">Name</label>
-      <input type="text" placeholder="your name">
-      <label class="fs-small">Your message</label>
-      <textarea placeholder="write something"></textarea>
-      <input type="submit" value="Submit">
+<section class="contact-sec bc-darker" id="signin">
+  <div class="contact-card col width-40 center middle bc-dark">
+    <h2>Get early access today</h2>
+    <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+  questions, our support team would be happy to help you.</p>
+    <form class="row wrap">
+      <input type="text" placeholder="email@example.com" name="mail" required>
+      <input type="submit" value="Get Started For Free">
     </form>
   </div>
 </section>
 
 </main>
 
-<footer>
-  <div class="row"> 
-    <div class="col">
-      <img src="https://picsum.photos/250/40" alt="">
+<footer class="bc-darkest">
+  <div class="col align-start"> 
+    <div class="row">
+      <img src="images/logo.svg" alt="">
     </div>
-    <div class="footer-list row">
-      <div class="col">
-        <p>lorem ipsum<br>here comes more text</p>
+    <div class="width-100 row wrap">
+      <div class="col width-30">
+        <div class="row align-center">
+            <img src="images/icon-location.svg" alt="">
+            <p>lorem ipsum, our support team would be happy to help you.</p>
+        </div>
+      </div>
+      <div class="col width-30">
+        <div class="row align-center">
+            <img src="images/icon-phone.svg" alt="">
+            <p>phone: +1-543-123-4567</p>
+        </div>
+        <div class="row align-center">
+            <img src="images/icon-email.svg" alt="">
+            <p>mail: example@fylo.com</p>
+        </div>
       </div>
       <div class="col">
         <ul class="footer-list">
-          <li>phone</li>
-          <li>mail</li>
+          <li><a href="#" class="footer-link">About Us</a></li>
+          <li><a href="#" class="footer-link">Jobs</a></li>
+          <li><a href="#" class="footer-link">Brewery</a></li>
+          <li><a href="#" class="footer-link">Blog</a></li>
         </ul>
       </div>
       <div class="col">
         <ul class="footer-list">
-          <li>About Us</li>
-          <li>About Them</li>
+          <li><a href="#" class="footer-link">Contact Us</a></li>
+          <li><a href="#" class="footer-link">Terms</a></li>
+          <li><a href="#" class="footer-link">Privacy</a></li>
         </ul>
       </div>
       <div class="col">
-        <ul class="footer-list">
-          <li>Contact</li>
-          <li>Here it comes</li>
-        </ul>
-      </div>
-      <div class="col">
-        <ul class="footer-list social">
-          <li>Social icon 1</li>
-          <li>Social icon 2</li>
-        </ul>
+        <div class="row">
+          <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+        </div>
       </div>
       
     </div>
   </div>
+    
+    <div class="width-40 center">
+        <p class="fs-small fc-grey"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://www.kleine-seiten.de" target="_blank">ULRICH CHAUMETTE</a>.
+        </p>
+    </div>
+
 </footer>
+</body>
+</html>
